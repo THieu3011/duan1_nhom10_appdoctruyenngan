@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Truyện"
+        android:id="@+id/truyenDialog_tvTenDialog"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20ssp" />
+
+    <EditText
+        android:id="@+id/truyenDialog_edTenTruyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/truyenDialog_tvTenDialog"
+        android:hint="Tên truyện"
+        android:textSize="@dimen/_15ssp"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <EditText
+        android:id="@+id/truyenDialog_edTacGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tác giả"
+        android:layout_below="@id/truyenDialog_edTenTruyen"
+        android:maxLines="1"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <EditText
+        android:id="@+id/truyenDialog_edNoiDung"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/truyenDialog_edTacGia"
+        android:layout_above="@id/truyenDialog_btnDongY"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="top"
+        android:hint="Nội dung truyện" />
+
+
+    <Button
+        android:id="@+id/truyenDialog_btnDongY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15ssp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/truyenDialog_btnTuChoi"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/truyenDialog_btnTuChoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15ssp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="Hủy" />
+
+</RelativeLayout>

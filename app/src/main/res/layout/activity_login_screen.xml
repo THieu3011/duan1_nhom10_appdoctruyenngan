@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.LoginScreen"
+    android:padding="@dimen/_10sdp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/layoutONhap"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/edtuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên tài khoản"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/design_editext"
+            />
+
+        <EditText
+            android:id="@+id/edtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:textSize="@dimen/_15ssp"
+            android:inputType="textPassword"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="@drawable/design_editext"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_below="@id/layoutONhap">
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:background="@drawable/design_button"
+            app:backgroundTint="@null"
+            android:textColor="#000"
+            android:textSize="@dimen/_15ssp" />
+
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/design_button"
+            app:backgroundTint="@null"
+            android:textColor="#000"
+            android:text="Đăng ký"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginTop="@dimen/_15sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/layoutONhap"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng Nhập"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/icon"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chào mừng bạn!"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="#000"
+            android:layout_marginTop="@dimen/_10sdp"/>
+    </LinearLayout>
+
+</RelativeLayout>
